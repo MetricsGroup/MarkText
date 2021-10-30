@@ -39,7 +39,7 @@ thirdPartyChecker.getLicenses(rootDir, (err, packages, checker) => {
     }
 
     // Check if we already added this package
-    if (addedKeys.hasOwnProperty(packageName)) {
+    if (Object.hasOwnProperty.prototype.call(addedKeys, packageName)) {
       return
     }
     addedKeys[packageName] = 1
